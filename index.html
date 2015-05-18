@@ -5,124 +5,412 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- Mirrored from localhost:54824/Index.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 May 2015 19:55:48 GMT -->
+<!-- Mirrored from localhost:54824/index.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 May 2015 08:14:17 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head><link href="Content/css/dynamic_1005_styles.css" rel="stylesheet" />
-
+<head><link href="Content/css/dynamic_1005_styles.css" rel="stylesheet" /><link href="Content/OwlCarousel/owl.carousel.css" rel="stylesheet" /><link href="Content/OwlCarousel/owl.theme.css" rel="stylesheet" />
+    
+        
+    <script src="Scripts/jquery-1.7.min.js"></script>
     <script src="Content/js/html5.js"></script>
-    <script src="Content/js/jquery.latest.min.js"></script>
     <script src="Content/js/dynamic_1005_js.js"></script>
+    <script src="Scripts/owl.carousel.js"></script>
 <title>
 
 </title></head>
 <body>
     
 
+<style>
+    .polaroid {
+        position: relative;
+        margin-top: 2.5px;
+    }
 
-<script type="text/javascript">
-(function($){
-	
-	$(document).ready(function(){
-				
-		//$('a[rel="google-360"]').fancybox({
-		//	type : 'iframe',
-		//	width : 800,
-		//	height : 505,
-		//	hideOnOverlayClick : false,
-		//	showNavArrows : false,
-		//	transitionIn : 'none'
-		//});
-		
-		//$('a[rel="product-send-inquiry"]').fancybox({
-		//	type : 'iframe',
-		//	width : 800,
-		//	height : 550,
-		//	hideOnOverlayClick : false,
-		//	showNavArrows : false,
-		//	transitionIn : 'none'
-		//});
-		
-		//$('a[rel="google-map"]').fancybox({
-		//	type : 'iframe',
-		//	width : 800,
-		//	height : 505,
-		//	hideOnOverlayClick : false,
-		//	showNavArrows : false,
-		//	transitionIn : 'none'
-		//});
-		
-				
-		var speed=1;
-		
-		w=$('#products li').length*$('#products li').width();
-		appendHTML=$('#products').html();
-		$($('#products')).append(appendHTML)
-		
-		function scroll2left(){
-			moveLeft=parseInt($('#products').css('left'))-speed;
-			$('#products').css({'left':moveLeft},500);
-			if($('#products').css('left')==(-w+'px')){
-				$('#products').css('left',0)
-			}
-		}
-		moveLeft_t=setInterval(scroll2left,10);
-		
-		$('#products').mouseenter(function(){speed=0})
-		$('#products').mouseleave(function(){speed=1})
-				 
-	})
-})(jQuery)
-</script>
+        .polaroid img {
+            border: 10px solid #fff;
+            border-bottom: 30px solid #fff;
+            -webkit-box-shadow: 3px 3px 3px #777;
+            -moz-box-shadow: 3px 3px 3px #777;
+            box-shadow: 3px 3px 3px #777;
+        }
+
+        .polaroid p {
+            position: absolute;
+            text-align: left;
+            width: 100%;
+            margin-left: 10px;
+            bottom: 10px;
+            font-size: 1.2em;
+        }
+
+    #oval {
+        margin: 1px;
+        background: white;
+        -moz-border-radius: 100px / 50px;
+        -webkit-border-radius: 100px / 50px;
+        border-radius: 100px / 50px;
+        position: relative;
+    }
+
+        #oval img {
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+</style>
+
 
 <header>
     <div id="logo">
         <section>
-            <ul class="cb">
-                <li>
-                    <h1>Prime Natural</h1>
-                    <p>Premier Source of 100% pure & natural highest quality products</p>
-                </li>
-            </ul>
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 181px;">
+                            <div id="oval">
+                                <img src="Content/webpage/WebsiteLogo.png" height="87" style="">
+                            </div>
+                        </td>
+
+                        <td>
+                            <ul class="cb">
+                                <li>
+                                    <h1>Prime Natural</h1>
+                                    <p>Premier Source of 100% Pure &amp; Natural Highest Quality Products</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </div>
 
     <nav class="cb" id="tml">
         <ul>
-            <li><a href="Index.html" class="on">Home</a></li>
-            <li><a href="products.html" class="">Products</a></li>
-            <li><a href="Inquiry.html" class="">Send Inquiry</a></li>
+            <li><a href="index.html" class="on">Home</a></li>
+            <li><a href="Products.html" class="">Products</a></li>
+            <li><a href="Faq.html" class="">FAQ</a></li>
+            
             <li><a href="Contact.html" class="">Contact us</a></li>
         </ul>
     </nav>
     <style>
-        #header {
-            background: url(Content/webpage/bg_1005.jpg) repeat center center;
+        #header {            
+            background-image: -ms-linear-gradient(left, #F0F0F0 0%, #999999 100%);            
+            background-image: -moz-linear-gradient(left, #F0F0F0 0%, #999999 100%);            
+            background-image: -o-linear-gradient(left, #F0F0F0 0%, #999999 100%);            
+            background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F0F0F0), color-stop(1, #999999));            
+            background-image: -webkit-linear-gradient(left, #F0F0F0 0%, #999999 100%);            
+            background-image: linear-gradient(to right, #F0F0F0 0%, #999999 100%);
         }
     </style>
     <section id="header">
-        <figure>
-            <ul class="cb" id="products">
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/rose-oil-135123.jpg" width="100" height="100" alt="Rose Oil " /></li>
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/sandalwood-oil-135125.jpg" width="100" height="100" alt="Sandalwood Oil" /></li>
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/sweet-marjoram-oil-135126.jpg" width="100" height="100" alt="Sweet Marjoram Oil" /></li>
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/eucalyptus-oil-135112.jpg" width="100" height="100" alt="Eucalyptus Oil " /></li>
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/ginger-oil-135113.jpg" width="100" height="100" alt="Ginger Oil " /></li>
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/lavender-oil-135117.jpg" width="100" height="100" alt="Lavender Oil" /></li>
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/peppermint-oil-135122.jpg" width="100" height="100" alt="Peppermint Oil" /></li>
-                <li>
-                    <img src="Content/product_images/bc-small/dir_25/721893/cananga-odorata-oil-135129.jpg" width="100" height="100" alt="Cananga Odorata Oil" /></li>
-            </ul>
-        </figure>
-        <div class="subTit">Rosemary Oils, Agarwood Oil, Lemongrass Oil, Sandalwood Oil, Rose Oil</div>
+        
+        <div id="prodSlider" class="owl-carousel" style="margin-left: 50px; width: 858px">
+            
+
+                    <div class="polaroid">
+                        <a href="agarwood-oil-united-states-135106.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/agarwood-oil-135106.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Agarwood Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="bergamot-oil-united-states-135107.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/bergamot-oil-135107.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Bergamot Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="cananga-odorata-oil-united-states-135129.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/cananga-odorata-oil-135129.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Cananga Odorata Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="cedarwood-oil-united-states-135108.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/cedarwood-oil-135108.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Cedarwood Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="chamomile-oil-united-states-135109.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/chamomile-oil-135109.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Chamomile Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="cinnamon-bark-oil-united-states-135110.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/cinnamon-bark-oil-135110.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Cinnamon Bark Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="clary-sage-oil-united-states-135111.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/clary-sage-oil-135111.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Clary Sage Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="eucalyptus-oil-united-states-135112.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/eucalyptus-oil-135112.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Eucalyptus Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="frankincense-oil-united-states-135114.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/frankincense-oil-135114.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Frankincense Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="geranium-oil-united-states-135115.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/geranium-oil-135115.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Geranium Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="ginger-oil-united-states-135113.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/ginger-oil-135113.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Ginger Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="jasmine-oil-united-states-135116.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/jasmine-oil-135116.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Jasmine Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="lavender-oil-united-states-135117.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/lavender-oil-135117.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Lavender Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="lemongrass-oil-united-states-135119.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/lemongrass-oil-135119.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Lemongrass Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="lemon-oil-united-states-135118.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/lemon-oil-135118.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Lemon Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="neroli-oil-united-states-135120.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/neroli-oil-135120.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Neroli Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="patchouli-oil-united-states-135121.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/patchouli-oil-135121.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Patchouli Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="peppermint-oil-united-states-135122.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/peppermint-oil-135122.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Peppermint Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="rosemary-oil-united-states-135124.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/rosemary-oil-135124.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Rosemary Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="rose-oil-united-states-135123.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/rose-oil-135123.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Rose Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="sandalwood-oil-united-states-135125.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/sandalwood-oil-135125.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Sandalwood Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="shea-butter-united-states-135130.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/shea-butter-135130.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Shea Butter</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="sweet-marjoram-oil-united-states-135126.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/sweet-marjoram-oil-135126.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Sweet Marjoram Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="sweet-orange-oil-united-states-135127.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/sweet-orange-oil-135127.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Sweet Orange Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+
+                    <div class="polaroid">
+                        <a href="tea-tree-oil-united-states-135128.html">
+                            <img src="Content/product_images/bc-small/dir_25/721893/tea-tree-oil-135128.jpg" alt="Touch" height="150">
+                            <h4>
+                                <p>Tea Tree Oil</p>
+                            </h4>
+                        </a>
+                    </div>
+
+                
+        </div>
+        
+        
+        
     </section>
 </header>
+
+<script type="text/javascript">
+    (function ($) {
+
+        $(document).ready(function () {            
+            var owl = $('#prodSlider');
+            owl.owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                pagination: false
+            });
+            owl.trigger('owl.play', 3000);
+        })
+
+    })(jQuery)
+</script>
 
     <br />
     <div id="body">
@@ -142,7 +430,19 @@
         </div>
         <nav class="comPro">
             <p>
-                Comming Soon
+                <b>Prime Cosmetics</b>, located in Oregon, sells 100% pure and natural botanical oils and skincare products. We have business partnered with best companies who are renowned for quality, reliability and in business for long time. Our business partners directly import from its original source all over the world and process them in its facilities in US and other countries.
+            </p>
+            <br />
+            <p>
+                <b>Prime Cosmetics</b> botanical oils are highest quality, 100% pure and natural with no diluents or additives. We provide high quality organic and/or 100% natural products at very competitive price, with an emphasis on the pure aesthetics and freshness. We have always put an emphasis on conducting business in an ethical, responsible, clear, and ecological way with customer first in mind.
+            </p>
+            <br />
+            <p>
+                Our motto is to bring happiness into lives of our customers, focusing on our products like pure aromatherapy oils, essential oils, organic essential oils and other skincare products. These products are mainly used for mental, physical as well as emotional health and also healing, sensual arousal, spiritual upliftment and meditation. Our range is entirely natural without any added artificial chemicals. Hence, these are highly effective and completely safe, as these do not have any side effects. We also guarantee 100% satisfaction to our customers from the products they buy from us.
+            </p>
+            <br />
+            <p>
+                Please find more at <a href="Faq.html">FAQ</a>.
             </p>
         </nav>
     </section>
@@ -172,11 +472,11 @@
         <h3>Contact Details</h3>
     </div>
     <nav>
-        <b>Name	</b>
+        <b>Prime Consmetics</b>
         
 
-        <p><b>Telephone :</b> +1-* </p>
-        <p class="read"><a href="contact-2.html"><span class="rA">&raquo;</span> More detail</a></p>
+        <p><b>Email :</b> <a href="mailto:info@primenatural.us">info@PrimeNatural.us</a> </p>
+        <p class="read"><a href="Contact.html"><span class="rA">&raquo;</span> More detail</a></p>
     </nav>
 </section>
 <br />
@@ -239,7 +539,7 @@
                         <li><a href="tea-tree-oil-united-states-135128.html" title="Tea Tree Oil"><span>&raquo;</span> Tea Tree Oil </a></li>
                     
                 
-                <li style="margin-left: 15px;"><a href="products.html">View more products</a></li>
+                <li style="margin-left: 15px;"><a href="Products.html">View more products</a></li>
             </ul>
         </nav>
     </div>
@@ -254,9 +554,9 @@
                 <br />
             </li>
         </ul>
-        <form method="post" action="http://localhost:54824/Index.aspx" id="form1">
+        <form method="post" action="http://localhost:54824/index.aspx" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
 </div>
 
             <div>
@@ -285,7 +585,7 @@
         </li>
     </ul>
     <p class="fr p5px"></p>
-    <p class="p5px">Copyright &copy; 2015. <b>ABCD.</b> <b></b></p>
+    <p class="p5px">Copyright &copy; 2015. <b>Prime Cosmetics LLC. All rights reserved.</b> <b></b></p>
 </footer>
 
         </div>
@@ -293,12 +593,12 @@
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Mozilla","requestId":"549d6cf2bf724a948a4b0f3f0466c9b1"}
+    {"appName":"Mozilla","requestId":"f11a673dd46846a6991b28673bbaf4f2"}
 </script>
-<script type="text/javascript" src="http://localhost:61874/dc490cfb326e4cf1ad1ba6b1dcc60cd1/browserLink" async="async"></script>
+<script type="text/javascript" src="http://localhost:9050/63475594a73040c78f13848ea0327632/browserLink" async="async"></script>
 <!-- End Browser Link -->
 
 </body>
 
-<!-- Mirrored from localhost:54824/Index.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 May 2015 19:56:08 GMT -->
+<!-- Mirrored from localhost:54824/index.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 May 2015 08:14:57 GMT -->
 </html>

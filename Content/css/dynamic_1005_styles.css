@@ -1460,12 +1460,13 @@ select{font:11px/1.2em Arial, Helvetica, sans-serif; padding:4px;}
 
 
 #header{ width:958px; height:197px;}
-#header>figure {width:620px; height:125px; overflow:hidden; position:relative;margin:25px 0 0 60px;}
-#header>figure ul{width:10000px; left:0; margin:5px 0;position:absolute;}
+/*#header>figure {width:960px; height:199px; overflow:hidden; position:relative;}*/
+/*#header>figure {width:620px; height:125px; overflow:hidden; position:relative;margin:25px 0 0 60px;}*/
+/*#header>figure ul{width:10000px; left:0; margin:5px 0;position:absolute;}
 #header>figure li { float:left; width:125px; height:125px;}
 #header>figure img{margin:0 5px; border-radius:60px;}
 #header .subTit{font-size:18px;line-height:1.5em; margin-left:60px;}
-#header .subTit span{font-size:20px;}
+#header .subTit span{font-size:20px;}*/
 
 
 
@@ -1807,10 +1808,10 @@ select{ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeee
 #tml li a{ color:#fff; text-shadow:1px 1px #333; }
 #tml li a:hover, #tml li .on{ color:#333; text-shadow:1px 1px #fff;background:#ebebeb;}
 
-#header{background:url(../webpage/bg_1005.jpg) no-repeat top; border:1px solid #ccc;}
+/*#header{background:url(../webpage/bg_1005.jpg) no-repeat top; border:1px solid #ccc;}
 #header .subTit span{font-size:20px; color:#333;}
 #header>figure img{ border:1px solid #aaa; box-shadow:0 0 10px #aaa;-moz-box-shadow:0 0 10px #aaa; -webkit-box-shadow:0 0 10px #aaa;}
-#header .subTit{color:#666; text-shadow:1px 1px #fff;}
+#header .subTit{color:#666; text-shadow:1px 1px #fff;}*/
 	
 #inq input , #inq textarea{border:1px solid #ddd; color:#666;
 				filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#ffffff');
