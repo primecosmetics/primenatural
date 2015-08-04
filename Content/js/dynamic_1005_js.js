@@ -2248,7 +2248,7 @@ easingOut:"swing",showCloseButton:true,showNavArrows:true,enableEscapeButton:tru
 
 function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
+}
 
 $(document).ready(function () {
     (function (i, s, o, g, r, a, m) {
