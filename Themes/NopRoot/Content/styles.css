@@ -238,7 +238,7 @@ div.newsletter-subscribe-block > div.newsletter-email { padding: 10px 0px; }
 
 .picture.thumbnail { margin: 5px 0 0 10px; }
 
-.productview img { height: 260px !important;width: 100%!important; }
+.productview img { height: 260px !important; /* width: 100%!important; */ }
 .prices { margin: 5px 0; font-size: 1.3em; font-weight: bold; }
 
 .price.old-price { text-decoration: line-through; }
